@@ -1,13 +1,11 @@
 <template>
   <div id="app">
-    <Origami/>
+    <Origami />
   </div>
 </template>
 
 <script>
-import Vue from 'vue';
-import Origami from  './components/Origami'
-
+import Origami from "./components/Origami";
 
 export default {
   name: "app",
@@ -16,7 +14,6 @@ export default {
   }
 };
 </script>
-
 <style>
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;

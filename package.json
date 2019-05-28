@@ -12,7 +12,9 @@
     "bootstrap-vue": "^2.0.0-rc.20",
     "core-js": "^2.6.5",
     "firebase": "^6.0.2",
+    "toastr": "^2.1.4",
     "vue": "^2.6.10",
+    "vue-toastr-2": "0.0.10",
     "vuefire": "^1.4.5"
   },
   "devDependencies": {

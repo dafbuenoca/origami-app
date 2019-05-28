@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <Origami/>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Vue from 'vue';
+import Origami from  './components/Origami'
+
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    Origami
   }
 };
 </script>

@@ -1,15 +1,10 @@
 <template>
     <div id="Origami">
         <div class="container"> 
-            <h1>Figuras</h1>
-            <div class="card">
-                <div class="card-header"> 
-                    <h3> Añadir figura </h3>
-                </div>
-                <div class="card-body">
-                    <FigureForm></FigureForm>
-                </div>
-            </div> 
+            <h1>
+                Figuras
+                
+            </h1>
             <hr>
             <div class="row"> 
                 <div class="col-4" v-for="figure in figures">
@@ -32,6 +27,7 @@ import FigureForm from "./FigureForm"
 const fb = require('../firebaseConfig.js')
 
 export default {
+    name: "Origami",
     firebase: {
         figures: fb.figuresRef,
     },

@@ -1,26 +1,36 @@
 <template>
   <div id="app">
-    <Origami />
+    <Navbar />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Origami from "./components/Origami";
-
+import Navbar from "./components/Navbar"
 export default {
   name: "app",
+   
   components: {
-    Origami
+    Navbar,
   }
 };
 </script>
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  .container.is-slim {
+    max-width: 600px;
+    vertical-align: middle;
+  }
+
+  .vertical-center {
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 300px);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
+
+.container.slim-form {
+        max-width: 1000px;
+    }
+  
 </style>

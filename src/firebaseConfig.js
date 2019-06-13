@@ -14,5 +14,8 @@ let db = app.database();
 let storage = app.storage();
 
 let figuresRef = db.ref("figures");
+let auth = app.auth();
+const authGoogle = new Firebase.auth.GoogleAuthProvider();
+const authFacebook = new Firebase.auth.FacebookAuthProvider();
 
-export { storage, db, figuresRef };
+export { app, storage, db, figuresRef, auth, authGoogle, authFacebook };
